@@ -13,7 +13,7 @@ public class Greeter {
   }
 
   /**
-   * Say hello to the provide person
+   * This is greet method
    * @param  someone name of the person
    * @return         hello message
    */
@@ -21,4 +21,3 @@ public class Greeter {
     return String.format("Hello, %s!", someone);
   }
 }
-
