@@ -3,7 +3,6 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				echo "Running BUILD_ID: ${env.BUILD_ID} on JENKINS_URL: ${env.JENKINS_URL}"
 				bat 'mvn clean package'
 				bat "docker build . -t tomcatwebapp:${env.BUILD_ID}"
 			}
